@@ -212,13 +212,14 @@ figure {
     margin: 0;
     list-style: none;
     display: inline;
-    font-weight: 300;
+    font-weight: bolder;
 }
 
 .fh5co-nav ul li a {
     font-size: 14px;
     padding: 30px 15px;
     color: rgba(0, 0, 0, 0.9);
+    font-weight: bolder;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -305,7 +306,7 @@ figure {
 }
 
 .fh5co-nav ul li.btn-cta a span {
-    background: #2d6cdf;
+    background: #db3e3e;
     padding: 4px 10px;
     display: -moz-inline-stack;
     display: inline-block;
@@ -1682,16 +1683,16 @@ figure {
 }
 
 .btn-primary {
-    background: #000000;
+    background: #801c1c;
     color: #fff;
-    border: 2px solid #801c1c;
+    border: 2px solid #575757;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background: #437be2 !important;
-    border-color: #437be2 !important;
+    background: #2e2e2e !important;
+    border-color: #2e2e2e !important;
 }
 
 .btn-primary.btn-outline {
