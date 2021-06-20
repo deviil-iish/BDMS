@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:itim;
+     margin: 15px 35px; 
+    font-size: 17px;
+    padding: 10px;
+}
+.container{
+     padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+input[type="text"],
+ input[type="cn"],
+ input[type="date"],
+select,
+textarea{
+    width: 20%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 15px;
+}
+.main_heading{
+    text-align: center;
+}
+input[type="submit"]
+{
+    background-color:rgb(126, 33, 33);
+    color: white;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    width:10%;
+}
+input[type="submit"]:hover
+{
+    background-color:black;
+}
+
+
+
