@@ -1303,75 +1303,6 @@ figure {
     box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74);
 }
 
-#fh5co-footer {
-    background: #efefef;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    color: #fff !important;
-}
-
-#fh5co-footer .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-#fh5co-footer .fh5co-footer-links {
-    padding: 0;
-    margin: 0;
-}
-
-#fh5co-footer .fh5co-footer-links li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#fh5co-footer .fh5co-footer-links li a {
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-}
-
-#fh5co-footer .fh5co-footer-links li a:hover {
-    text-decoration: underline;
-}
-
-#fh5co-footer .fh5co-widget {
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    #fh5co-footer .fh5co-widget {
-        text-align: left;
-    }
-}
-
-#fh5co-footer .fh5co-widget h3 {
-    margin-bottom: 15px;
-    font-weight: bold;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", Arial, sans-serif;
-    color: #fff;
-}
-
-#fh5co-footer .copyright .block {
-    display: block;
-}
-
-#fh5co-footer .copyright .block a {
-    color: rgba(255, 255, 255, 0.5);
-}
-
 #map {
     width: 100%;
     height: 500px;
@@ -1527,6 +1458,166 @@ figure {
 .gototop a:focus {
     text-decoration: none;
     outline: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section {
+    background: #000000;
+    position: relative;
+}
+
+.footer-cta {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    border-spacing: 15px;
+}
+
+.single-cta i {
+    color: #ff1414;
+    font-size: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cta-text span {
+    color: #757575;
+    font-size: 15px;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 35px;
+}
+
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-text p {
+    margin-top: auto;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 28px;
+}
+
+.footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.facebook-bg {
+    background: #000000;
+}
+
+.twitter-bg {
+    background: #000000;
+}
+
+.google-bg {
+    background: #000000;
+}
+
+.instagram-bg {
+    background: #000000;
+}
+
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 150px;
+    background: #ff1414;
+}
+
+.footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+    color: #ff1414;
+}
+
+.footer-widget ul li a {
+    color: #dadada;
+    text-transform: capitalize;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: #ff1414;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
 }
 
 .fh5co-nav-toggle {
