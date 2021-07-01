@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Education &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+    <title>Donor Centre Locations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
     <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -61,9 +61,17 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Footer-->
+    <link rel="stylesheet" href="css/dclocation.css">
+    <script src="js/dclocation.js"></script>
+
     <!--Footer-->
     <script src="https://kit.fontawesome.com/b20d4e7598.js" crossorigin="anonymous"></script>
-	
+
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -97,7 +105,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-2">
-                             <div id="fh5co-logo"><a href="index.html"><img src="images/logo.png" width="30" height="30"></i>Blood+<span></span></a></div>
+                            <div id="fh5co-logo">
+                                <a href="index.html"><img src="images/logo.png" width="30" height="30"></i>Blood+<span></span></a>
+                            </div>
                         </div>
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
@@ -111,16 +121,6 @@
                                 </li>
                                 <li class="active"><a href="dclocations.html">Donor Centre Locations</a></li>
                                 <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="supportus.html">Support Us</a></li>
-                                <!-- <li class="has-dropdown">
-								<a href="blog.html">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li> -->
                                 <li><a href="contact.html">Contact</a></li>
                                 <li class="btn-cta"><a href="#"><span>Login</span></a></li>
                                 <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
@@ -135,236 +135,360 @@
         <aside id="fh5co-hero">
             <div class="flexslider">
                 <ul class="slides">
-                    <li style="background-image: url(images/img_bg_4.jpg);">
-                        <div class="overlay-gradient"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                    <div class="slider-text-inner">
-                                        <h1 class="heading-section">Our Faculty</h1>
-                                        <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    <img src="images/bdc.jpg">
                 </ul>
             </div>
         </aside>
 
-        <div id="fh5co-staff">
-            <div class="container">
+        <div class="container">
+            <section id="fancyTabWidget" class="tabs t-tabs">
+                <ul class="nav nav-tabs fancyTabs" role="tablist">
+
+                    <li class="tab fancyTab active">
+                        <div class="arrow-down">
+                            <div class="arrow-down-inner"></div>
+                        </div>
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="hidden-xs">Lahore</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+
+                    <li class="tab fancyTab">
+                        <div class="arrow-down">
+                            <div class="arrow-down-inner"></div>
+                        </div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="hidden-xs">Faisalabad</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+
+                    <li class="tab fancyTab">
+                        <div class="arrow-down">
+                            <div class="arrow-down-inner"></div>
+                        </div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="hidden-xs">Multan</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+
+                    <li class="tab fancyTab">
+                        <div class="arrow-down">
+                            <div class="arrow-down-inner"></div>
+                        </div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="hidden-xs">Rawalpindi</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+
+                    <li class="tab fancyTab">
+                        <div class="arrow-down">
+                            <div class="arrow-down-inner"></div>
+                        </div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><span class="hidden-xs">Gujrat</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+
+                    <li class="tab fancyTab">
+                        <div class="arrow-down">
+                            <div class="arrow-down-inner"></div>
+                        </div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><span class="hidden-xs">Sargodha</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="images/i3.jpg" alt="Jane" style="width:100%">
+                                                <div class="containert">
+                                                    <h2>Sundas Foundation</h2>
+                                                    <p><i class="fas fa-map-marker-alt"></i> 880, near Crescent Model Girls High School, Shadman 1<br>
+                                                        <i class="fas fa-phone"></i> + 92 42 37422131<br>
+                                                        <i class="far fa-calendar-alt"></i> Open 24 hours</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="images/lhrff.jpg" alt="Mike" style="width:100%">
+                                                <div class="containert">
+                                                    <h2>Fatimid Foundation</h2>
+                                                    <p><i class="fas fa-map-marker-alt"></i> 72-A, Block D-2, Phase 1, Johar Town<br>
+                                                        <i class="fas fa-phone"></i> + 92 42 35210834<br>
+                                                        <i class="far fa-calendar-alt"></i> 9:30 AM to 6:30 PM (Closed on Sundays)</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="images/lhcprc.jpg" alt="John" style="width:100%">
+                                                <div class="containert">
+                                                    <h2>Pakistan Red Crescent Society</h2>
+                                                    <p><i class="fas fa-map-marker-alt"></i> Queen’s Road, Mozang Chungi<br>
+                                                        <i class="fas fa-phone"></i> + 92 42 36304703<br>
+                                                        <i class="far fa-calendar-alt"></i> 10:00 AM to 6:00 PM (Closed on Sundays)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/i3.jpg" alt="Jane" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Ali Zaib Blood Transfusion Services</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> University Road<br>
+                                                    <i class="fas fa-phone"></i> +92 41 2697000 01 03<br>
+                                                    <i class="far fa-calendar-alt"></i> Open 24 hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/i1.jpg" alt="Mike" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Chiniot Blood Bank & Dialysis Centre</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> 388-, Jinnah Ave, Jinnah Colony<br>
+                                                    <i class="fas fa-phone"></i> + 92 41 2628869<br>
+                                                    <i class="far fa-calendar-alt"></i> 6:00 AM to 8:00 PM (Closed on Fridays)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/lhrff.jpg" alt="Jane" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Fatimid Foundation</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Block J, Shah Rukn e Alam Housing Scheme<br>
+                                                    <i class="fas fa-phone"></i> +92 61 4554520<br>
+                                                    <i class="far fa-calendar-alt"></i> 9:30 AM to 6:30 PM (Closed on Sundays)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/i2.jpg" alt="Mike" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Amina Blood Bank</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Lalazar Colony Road<br>
+                                                    <i class="fas fa-phone"></i> + 92 301 7542456<br>
+                                                    <i class="far fa-calendar-alt"></i> 9:00 AM to 10:00 PM (Closed on Sundays)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/i3.jpg" alt="Jane" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Armed Forces Institute of Transfusion</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Convoy Road<br>
+                                                    <i class="fas fa-phone"></i> +92 51 5527565<br>
+                                                    <i class="far fa-calendar-alt"></i> Open 24 hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/jsf.jpeg" alt="Mike" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Jamila Sultana Foundation</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Lane #6, Chaklala Housing Scheme #3<br>
+                                                    <i class="fas fa-phone"></i> + 92 51 5153335<br>
+                                                    <i class="far fa-calendar-alt"></i> 9:00 AM to 6:00 PM (Closed on Fridays)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/husaini.png" alt="Jane" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Husaini Blood Bank</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Peshawar Road<br>
+                                                    <i class="fas fa-phone"></i> +92 332 4331133<br>
+                                                    <i class="far fa-calendar-alt"></i> Open 24 hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/i2.jpg" alt="Jane" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Sundas Foundation</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> 13-B، Marghzar Colony<br>
+                                                    <i class="fas fa-phone"></i> (053) 3609909<br>
+                                                    <i class="far fa-calendar-alt"></i> Open 24 hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/skf.jpg" alt="Mike" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Shaukat Khanum Laboratory Collection Centre</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Circular Rd, Prince Chowk Khwajgan<br>
+                                                    <i class="fas fa-phone"></i> (053) 3724242<br>
+                                                    <i class="far fa-calendar-alt"></i> 7:30am to 11:00pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/efd.jpg" alt="Jane" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Shaheen Laboratory Blood Bank</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Mianwali Rd, Noori Gate Chowk, Block 7<br>
+                                                    <i class="fas fa-phone"></i> +92 345 8669074<br>
+                                                    <i class="far fa-calendar-alt"></i> Open 24 hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="card">
+                                            <img src="images/i1.jpg" alt="Mike" style="width:100%">
+                                            <div class="containert">
+                                                <h2>Life Care Welfare Blood Bank & Laboratory</h2>
+                                                <p><i class="fas fa-map-marker-alt"></i> Aslaha Wali Gali, Block 5, 5 Block<br>
+                                                    <i class="fas fa-phone"></i> +92 301 4737673<br>
+                                                    <i class="far fa-calendar-alt"></i> 9:30am to 6:00pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+        </section>
+    </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
                 <div class="row">
-                    <div class="col-md-3 text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Plot 7-A, Block R-3, Johar Town, Lahore</span>
                             </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-2.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+92 42 256637587</span>
                             </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>contact@bloodplus.com</span>
                             </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="images/logo_footer.png" class="img-fluid" alt="logo"></a>
                             </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+                            <div class="footer-text">
+                                <p>2005-2021 Blood Plus is a Red Ventures Company. All rights reserved. Our website services, content, and products are for informational purposes only. Blood Plus does not provide diagnosis, or treatment.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="#"><i class="fa fa-instagram instagram-bg"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
                             </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
-                            </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-2.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
-                            </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 animate-box text-center">
-                        <div class="staff">
-                            <div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-                                <ul class="fh5co-social">
-                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                                    <li><a href="#"><i class="icon-github"></i></a></li>
-                                </ul>
-                            </div>
-                            <span>Health Teacher</span>
-                            <h3><a href="#">Mike Smith</a></h3>
-                            <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="appointment.html">Appointment</a></li>
+                                <li><a href="dclocations.html">Locations</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="supportus.html">Support Us</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
-            <div class="overlay"></div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 animate-box">
-                    <div class="date-counter text-center">
-                        <h2>Get 400 of Online Courses for Free</h2>
-                        <h3>By Mike Smith</h3>
-                        <div class="simply-countdown simply-countdown-one"></div>
-                        <p><strong>Limited Offer, Hurry Up!</strong></p>
-                        <p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-               <footer class="footer-section">
-            <div class="container">
-                <div class="footer-cta pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-4 mb-30">
-                            <div class="single-cta">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="cta-text">
-                                    <h4>Find us</h4>
-                                    <span>Plot 7-A, Block R-3, Johar Town, Lahore</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 mb-30">
-                            <div class="single-cta">
-                                <i class="fas fa-phone"></i>
-                                <div class="cta-text">
-                                    <h4>Call us</h4>
-                                    <span>+92 42 256637587</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 mb-30">
-                            <div class="single-cta">
-                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                                <div class="cta-text">
-                                    <h4>Mail us</h4>
-                                    <span>contact@bloodplus.com</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-content pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 mb-50">
-                            <div class="footer-widget">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="images/logo_footer.png" class="img-fluid" alt="logo"></a>
-                                </div>
-                                <div class="footer-text">
-                                    <p>2005-2021 Blood Plus is a Red Ventures Company. All rights reserved. Our website services, content, and products are for informational purposes only. Blood Plus does not provide diagnosis, or treatment.</p>
-                                </div>
-                                <div class="footer-social-icon">
-                                    <span>Follow us</span>
-                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                                    <a href="#"><i class="fa fa-instagram instagram-bg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="appointment.html">Appointment</a></li>
-                                    <li><a href="dclocations.html">Locations</a></li>
-                                    <li><a href="aboutus.html">About Us</a></li>
-                                    <li><a href="supportus.html">Support Us</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
     </div>
 
     <div class="gototop js-top">
