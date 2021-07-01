@@ -504,6 +504,10 @@ figure {
     }
 }
 
+#fh5co-course {
+    background-color: #ffffff;
+}
+
 .services {
     width: 95%;
     margin: 0 auto;
@@ -622,6 +626,7 @@ figure {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     margin-bottom: 30px;
+    color: white;
 }
 
 .course .desc,
@@ -655,7 +660,7 @@ figure {
 
 .course .desc {
     padding: 1.7em;
-    background: #fafafa;
+    background: #585858;
 }
 
 .course .desc h3 {
@@ -664,7 +669,7 @@ figure {
 }
 
 .course .desc h3 a {
-    color: #000;
+    color: rgb(255, 255, 255);
 }
 
 .course .desc .date {
@@ -674,9 +679,9 @@ figure {
 }
 
 .course .desc .btn-course {
-    border: 2px solid rgba(0, 0, 0, 0.8) !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
     background: transparent;
-    color: rgba(0, 0, 0, 0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
