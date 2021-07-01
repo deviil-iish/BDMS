@@ -660,12 +660,12 @@ figure {
 
 .course .desc {
     padding: 1.7em;
-    background: #585858;
+    background: #000000;
 }
 
 .course .desc h3 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .course .desc h3 a {
