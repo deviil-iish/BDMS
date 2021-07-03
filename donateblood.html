@@ -10,6 +10,7 @@
     <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
     <meta name="author" content="freehtml5.co" />
     <link rel="stylesheet" href="css/donateblood.css">
+    
 
     <!-- 
 	//////////////////////////////////////////////////////
@@ -85,7 +86,7 @@
                     <div class="row">
                         <div class="col-xs-12 text-right">
                             <p class="site">www.bloodplus.com</p>
-                            <p class="num">Call: +92 42 2566375878</p>
+                            <p class="num">Call: +92 42 256637587</p>
                             <ul class="fh5co-social">
                                 <li><a href="#"><i class="icon-facebook2"></i></a></li>
                                 <li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -112,6 +113,7 @@
                                 </li>
                                 <li><a href="dclocations.html">Donor Centre Locations</a></li>
                                 <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="supportus.html">Support Us</a></li>
                                 <!-- <li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -122,6 +124,8 @@
 								</ul>
 							</li> -->
                                 <li><a href="contact.html">Contact</a></li>
+                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                                <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -132,10 +136,9 @@
 
         
  <div class ="container">
-        <form action="">
-            <h1 class="main_heading"> Blood donor Registration</h1>
+        <form method="POST" action="savedatadonor.php">
+            <h1 class="main_heading"> Blood Donor Registration</h1>
             <hr>
-            
             <label for="name">Name:</label>
              <input type="text" name="name" placeholder="Your name"><br><br>
 
@@ -152,25 +155,53 @@
              <option value="AB-">AB-</option>
                 </select><br><br>
 
-                <label for="location">Location:</label>
-                <input type="text" name="location" placeholder="Your Address"><br>
-           
+            
+                <label for="city">City: </label>
+                <select id="city" name="city">
+                    <option value="-1">Select</option>
+                   <option value="Lahore">Lahore</option>
+                   <option value="Faisalabad">Faisalabad</option>
+                   <option value="Multan">Multan</option>
+                   <option value="Rawalpindi">Rawalpindi</option>
+                   <option value="Gujrat">Gujrat</option>
+                   <option value="Sargodha">Sargodha</option>
+                </select><br><br>
+        
+                
+                <label for="centrelocation">Centre Location: </label>
+                <select id="centrelocation" name="centrelocation">
+                    <option value="-1">Select</option>
+                    <option value="Sundas Foundation">Sundas Foundation</option>
+                    <option value="Fatimid Foundation">Fatimid Foundation</option>
+                    <option value="Pakistan red crescent society">Pakistan red crescent society</option>
+                    <option value="Ali zaib blood transfusion services">Ali zaib blood transfusion services</option>
+                    <option value="Chiniot Blood Bank & Dialysis Centre">Chiniot Blood Bank & Dialysis Centre</option>
+                    <option value="Amna blood bank">Amna blood bank</option>
+                    <option value="Armed forces institute of transfusion">Armed forces institute of transfusion</option>
+                    <option value="Jamila sultana foundation">Jamila sultana foundation</option>
+                    <option value="Husaini blood bank">Husaini blood bank</option>
+                    <option value="Shaukat Khanum Laboratory Collection Centre">Shaukat Khanum Laboratory Collection Centre</option>
+                    <option value="Shaheen Laboratory Blood Bank">Shaheen Laboratory Blood Bank</option>
+                    <option value="Life Care Welfare Blood Bank & Laboratory">Life Care Welfare Blood Bank & Laboratory</option>
+
+                </select><br><br>
+
                 <label for="cn">Contact Number:</label>
                 <input type="text" name="cn" placeholder="Your number" placeholder="03316689805"><br>
-                
-                <label for="city">City: </label>
-                <input type="text" name="city" placeholder="Your city"><br>
+
+
 
                 <label for="ldd">Last donation date: </label>
                 <input type="date" name="ldd"><br>
 
                 <label for="cnic">CNIC: </label>
-                <input type="text" name="cnic" placeholder="33402-8127342-1"><br>
+                <input type="text" name="cnic" placeholder="33402-8127342-1"><br><br>
 
         
             
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"><br><br>
         </form>
+    </div>
 
 <footer class="footer-section">
             <div class="container">
@@ -234,6 +265,7 @@
                                     <li><a href="appointment.html">Appointment</a></li>
                                     <li><a href="dclocations.html">Locations</a></li>
                                     <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="supportus.html">Support Us</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
                                 </ul>
                             </div>
@@ -242,6 +274,7 @@
                 </div>
             </div>
         </footer>
+
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
